@@ -97,7 +97,7 @@ function gameEngine(){
 let hiscore = localStorage.getItem("hiscore");
 if(hiscore === null){
     hiscoreval = 0;
-    localStorage.setItem("hiscore", json.stringify(hiscoreval));
+    localStorage.setItem("hiscore", JSON.stringify(hiscoreval));
 }
 else{
     hiscoreval = JSON.parse(hiscore);
